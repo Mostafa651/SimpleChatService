@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation - SimpleChatService</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/documentation.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-    <meta name="description" content="Simple documentation for SimpleChatService">
+    <meta name="description" content="Documentation for SimpleChatService - A simple chat system for Roblox">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,128 +30,99 @@
         </div>
     </nav>
 
-    <!-- Documentation Header -->
-    <section class="docs-hero">
+    <!-- Hero Section -->
+    <section class="hero docs-hero">
         <div class="container">
-            <div class="docs-header">
-                <h1>SimpleChatService Documentation</h1>
-                <p>Everything you need to know about using SimpleChatService in your Roblox game</p>
+            <div class="hero-content">
+                <h1 class="hero-title">Documentation</h1>
+                <p class="hero-description">
+                    Learn how to use SimpleChatService in your Roblox game
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Documentation Content -->
-    <main class="docs-main">
+    <!-- Quick Start -->
+    <section class="section">
         <div class="container">
-            <div class="docs-layout">
-                <!-- Sidebar -->
-                <aside class="docs-sidebar">
-                    <nav class="docs-nav">
-                        <a href="#overview" class="docs-nav-link active">Overview</a>
-                        <a href="#modules" class="docs-nav-link">Modules</a>
-                        <a href="#configuration" class="docs-nav-link">Configuration</a>
-                        <a href="#usage" class="docs-nav-link">Basic Usage</a>
-                        <a href="#admin" class="docs-nav-link">Admin Commands</a>
-                    </nav>
-                </aside>
+            <div class="section-header">
+                <h2>🚀 Quick Start</h2>
+                <p>Get up and running in minutes</p>
+            </div>
+            <div class="quick-start-grid">
+                <div class="quick-start-card">
+                    <div class="step-number">1</div>
+                    <h3>Download & Import</h3>
+                    <p>Download the .rbxm file and import it into your game</p>
+                </div>
+                <div class="quick-start-card">
+                    <div class="step-number">2</div>
+                    <h3>Configure</h3>
+                    <p>Edit ChatConfig.luau to customize your chat settings</p>
+                </div>
+                <div class="quick-start-card">
+                    <div class="step-number">3</div>
+                    <h3>Test</h3>
+                    <p>Run your game and start chatting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Main Content -->
-                <div class="docs-content">
-                    <!-- Overview Section -->
-                    <section id="overview" class="docs-section">
-                        <div class="section-header">
-                            <h2>📋 Overview</h2>
-                            <p>What SimpleChatService actually includes</p>
-                        </div>
-                        
-                        <div class="overview-grid">
-                            <div class="overview-item">
-                                <div class="overview-icon">💬</div>
-                                <h3>Basic Chat System</h3>
-                                <p>Send and receive messages between players in your game</p>
-                            </div>
-                            <div class="overview-item">
-                                <div class="overview-icon">🛡️</div>
-                                <h3>Simple Admin Tools</h3>
-                                <p>Basic moderation commands for game administrators</p>
-                            </div>
-                            <div class="overview-item">
-                                <div class="overview-icon">⚙️</div>
-                                <h3>Easy Configuration</h3>
-                                <p>Simple settings file to customize your chat experience</p>
-                            </div>
-                        </div>
-                    </section>
+    <!-- Main Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>✨ What's Included</h2>
+                <p>Core features of SimpleChatService</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Basic Messaging</h3>
+                    <p>Players can send and receive messages in real-time</p>
+                    <ul class="feature-list">
+                        <li>Message length limits</li>
+                        <li>Rate limiting protection</li>
+                        <li>Clean message display</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Admin Commands</h3>
+                    <p>Basic moderation tools for administrators</p>
+                    <ul class="feature-list">
+                        <li>Kick players</li>
+                        <li>Mute/unmute users</li>
+                        <li>Server announcements</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Easy Configuration</h3>
+                    <p>Simple settings to customize your chat</p>
+                    <ul class="feature-list">
+                        <li>Message limits</li>
+                        <li>UI colors</li>
+                        <li>Admin permissions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Modules Section -->
-                    <section id="modules" class="docs-section">
-                        <div class="section-header">
-                            <h2>🔧 Modules</h2>
-                            <p>The actual files included in SimpleChatService</p>
-                        </div>
-
-                        <div class="modules-grid">
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>ChatSystemServer.luau</h3>
-                                    <span class="module-type">Server</span>
-                                </div>
-                                <p>Main server-side chat handling and message processing</p>
-                            </div>
-                            
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>ChatSystemClient.luau</h3>
-                                    <span class="module-type">Client</span>
-                                </div>
-                                <p>Client-side chat interface and user interaction</p>
-                            </div>
-                            
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>AdminCommands.luau</h3>
-                                    <span class="module-type">Server</span>
-                                </div>
-                                <p>Basic admin commands like kick, mute, and unmute</p>
-                            </div>
-                            
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>ChatConfig.luau</h3>
-                                    <span class="module-type">Shared</span>
-                                </div>
-                                <p>Configuration settings for the chat system</p>
-                            </div>
-                            
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>MessageHandler.luau</h3>
-                                    <span class="module-type">Server</span>
-                                </div>
-                                <p>Processes and validates chat messages</p>
-                            </div>
-                            
-                            <div class="module-card">
-                                <div class="module-header">
-                                    <h3>PlayerManager.luau</h3>
-                                    <span class="module-type">Server</span>
-                                </div>
-                                <p>Manages player data and permissions</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Configuration Section -->
-                    <section id="configuration" class="docs-section">
-                        <div class="section-header">
-                            <h2>⚙️ Configuration</h2>
-                            <p>Simple settings you can customize</p>
-                        </div>
-
-                        <div class="config-example">
-                            <h3>ChatConfig.luau Settings</h3>
-                            <div class="code-block">
-                                <pre><code>-- Basic chat configuration
+    <!-- Configuration -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>⚙️ Configuration</h2>
+                <p>Customize your chat system</p>
+            </div>
+            <div class="config-section">
+                <h3>ChatConfig.luau Settings</h3>
+                <div class="code-block">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code>-- Basic chat configuration
 local ChatConfig = {
     MaxMessageLength = 200,
     MessageCooldown = 1, -- seconds
@@ -166,130 +138,115 @@ local ChatConfig = {
 }
 
 return ChatConfig</code></pre>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                        </div>
-                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Usage Section -->
-                    <section id="usage" class="docs-section">
-                        <div class="section-header">
-                            <h2>🚀 Basic Usage</h2>
-                            <p>How to use SimpleChatService in your scripts</p>
-                        </div>
-
-                        <div class="usage-examples">
-                            <div class="usage-example">
-                                <h3>Sending a Message (Client)</h3>
-                                <div class="code-block">
-                                    <pre><code>-- Get the chat events
+    <!-- Basic Usage -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📝 Basic Usage</h2>
+                <p>How to use the chat system</p>
+            </div>
+            <div class="usage-grid">
+                <div class="usage-card">
+                    <h3>Sending Messages</h3>
+                    <div class="code-block">
+                        <button class="copy-btn">Copy</button>
+                        <pre><code>-- Get the chat events
 local ChatEvents = require(ReplicatedStorage.ChatEvents)
 
 -- Send a message
 ChatEvents.SendMessage:Fire("Hello everyone!")</code></pre>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                                </div>
-                            </div>
-
-                            <div class="usage-example">
-                                <h3>Listening for Messages (Client)</h3>
-                                <div class="code-block">
-                                    <pre><code>-- Listen for incoming messages
+                    </div>
+                </div>
+                <div class="usage-card">
+                    <h3>Receiving Messages</h3>
+                    <div class="code-block">
+                        <button class="copy-btn">Copy</button>
+                        <pre><code>-- Listen for incoming messages
 ChatEvents.MessageReceived:Connect(function(playerName, message, timestamp)
     print(playerName .. ": " .. message)
 end)</code></pre>
-                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Admin Commands Section -->
-                    <section id="admin" class="docs-section">
-                        <div class="section-header">
-                            <h2>🛡️ Admin Commands</h2>
-                            <p>Basic moderation tools available to administrators</p>
-                        </div>
-
-                        <div class="commands-list">
-                            <div class="command-item">
-                                <div class="command-syntax">
-                                    <code>/kick [player]</code>
-                                </div>
-                                <p>Kicks a player from the game</p>
-                            </div>
-                            
-                            <div class="command-item">
-                                <div class="command-syntax">
-                                    <code>/mute [player]</code>
-                                </div>
-                                <p>Prevents a player from sending chat messages</p>
-                            </div>
-                            
-                            <div class="command-item">
-                                <div class="command-syntax">
-                                    <code>/unmute [player]</code>
-                                </div>
-                                <p>Allows a muted player to send messages again</p>
-                            </div>
-                            
-                            <div class="command-item">
-                                <div class="command-syntax">
-                                    <code>/announce [message]</code>
-                                </div>
-                                <p>Sends a server-wide announcement message</p>
-                            </div>
-                        </div>
-
-                        <div class="admin-note">
-                            <h4>Setting Up Admins</h4>
-                            <p>Add user IDs to the AdminList in ChatConfig.luau:</p>
-                            <div class="code-block">
-                                <pre><code>AdminList = {123456789, 987654321} -- Replace with actual user IDs</code></pre>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Getting Help Section -->
-                    <section id="help" class="docs-section">
-                        <div class="section-header">
-                            <h2>❓ Need Help?</h2>
-                            <p>Resources for getting support</p>
-                        </div>
-
-                        <div class="help-options">
-                            <div class="help-card">
-                                <div class="help-icon">💬</div>
-                                <h3>Discord Server</h3>
-                                <p>Join our community for help and discussions</p>
-                                <a href="#" class="btn btn-secondary discord-link">Join Discord</a>
-                            </div>
-                            
-                            <div class="help-card">
-                                <div class="help-icon">📺</div>
-                                <h3>YouTube Tutorials</h3>
-                                <p>Watch step-by-step setup and usage guides</p>
-                                <a href="#" class="btn btn-secondary youtube-link">Watch Tutorials</a>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Admin Commands -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🛡️ Admin Commands</h2>
+                <p>Available moderation commands</p>
+            </div>
+            <div class="commands-grid">
+                <div class="command-card">
+                    <div class="command-syntax">/kick [player]</div>
+                    <p>Removes a player from the game</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-syntax">/mute [player]</div>
+                    <p>Prevents a player from sending messages</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-syntax">/unmute [player]</div>
+                    <p>Allows a muted player to chat again</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-syntax">/announce [message]</div>
+                    <p>Sends a server-wide announcement</p>
+                </div>
+            </div>
+            <div class="admin-setup">
+                <h3>Setting Up Admins</h3>
+                <p>Add user IDs to the AdminList in ChatConfig.luau:</p>
+                <div class="code-block">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code>AdminList = {123456789, 987654321} -- Replace with actual user IDs</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need Help -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>❓ Need Help?</h2>
+                <p>Get support and connect with the community</p>
+            </div>
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-icon">💬</div>
+                    <h3>Discord Server</h3>
+                    <p>Join our community for help and discussions</p>
+                    <a href="#" class="btn btn-primary discord-link">Join Discord</a>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">📺</div>
+                    <h3>YouTube Tutorials</h3>
+                    <p>Watch step-by-step video guides</p>
+                    <a href="#" class="btn btn-secondary youtube-link">Watch Videos</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-main">
+                <div class="footer-brand">
                     <div class="footer-logo">
                         <span class="logo-icon">💬</span>
                         <span class="logo-text">SimpleChatService</span>
                     </div>
                     <p class="footer-description">
-                        Simple and honest documentation for a simple chat system.
+                        A simple chat system for Roblox games.
                     </p>
                 </div>
                 <div class="footer-links">
@@ -301,70 +258,21 @@ end)</code></pre>
                             <li><a href="assets/SimpleChatService.rbxm" download>Download</a></li>
                         </ul>
                     </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#" class="discord-link">Discord Server</a></li>
+                            <li><a href="#" class="youtube-link">YouTube Tutorials</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SimpleChatService. Simple and honest.</p>
+                <p>&copy; 2025 SimpleChatService</p>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.docs-nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Update active link
-                    document.querySelectorAll('.docs-nav-link').forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                }
-            });
-        });
-
-        // Copy code functionality
-        function copyCode(button) {
-            const codeBlock = button.previousElementSibling;
-            const text = codeBlock.textContent;
-            
-            navigator.clipboard.writeText(text).then(() => {
-                button.textContent = 'Copied!';
-                button.classList.add('copied');
-                setTimeout(() => {
-                    button.textContent = 'Copy';
-                    button.classList.remove('copied');
-                }, 2000);
-            });
-        }
-
-        // Update active navigation on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.docs-section');
-            const navLinks = document.querySelectorAll('.docs-nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
