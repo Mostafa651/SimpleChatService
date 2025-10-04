@@ -1,0 +1,71 @@
+# GitHub Pages Configuration
+title: SimpleChatService
+description: Professional, secure, and feature-rich chat solution for Roblox games
+url: "https://mostafa651.github.io"
+baseurl: "/SimpleChatService"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: Advanced Roblox Chat System Team
+twitter:
+  username: your_twitter_handle
+  card: summary_large_image
+
+# Social links
+github_username: your-username
+twitter_username: your_twitter_handle
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+  - INSTALLATION.md
+
+# Include files
+include:
+  - _pages
+  - assets
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "doc"
+
+# Custom variables
+version: "1.0.0"
+github_repo: "https://github.com/your-username/advanced-roblox-chat-system"
+download_url: "https://github.com/your-username/advanced-roblox-chat-system/releases/latest"

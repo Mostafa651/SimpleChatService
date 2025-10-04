@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples - SimpleChatService</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Code examples for SimpleChatService">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>💬</span>
+                SimpleChatService
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="installation.html" class="nav-link">Installation</a></li>
+                <li><a href="documentation.html" class="nav-link">Documentation</a></li>
+                <li><a href="api.html" class="nav-link">API</a></li>
+                <li><a href="examples.html" class="nav-link active">Examples</a></li>
+                <li><a href="https://github.com/mostafa651/SimpleChatService" class="nav-link">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Examples Content -->
+    <main class="examples-page">
+        <div class="container">
+            <h1>Code Examples</h1>
+            <p>Learn how to use SimpleChatService with these practical examples.</p>
+            
+            <section class="example-section">
+                <h2>Basic Setup</h2>
+                <p>How to set up the chat system in your game:</p>
+                <pre><code>-- In ServerScriptService
+local SimpleChatSystem = ReplicatedStorage:WaitForChild("SimpleChatSystem")
+local ChatSystemServer = require(SimpleChatSystem.System.ChatSystemServer)
+
+-- Initialize the chat system
+ChatSystemServer.initialize()</code></pre>
+            </section>
+
+            <section class="example-section">
+                <h2>Custom Commands</h2>
+                <p>Adding your own chat commands:</p>
+                <pre><code>-- In ChatCommands.luau
+local function customCommand(player, args)
+    -- Your command logic here
+    return "Command executed!"
+end
+
+-- Register the command
+ChatCommands.registerCommand("/mycommand", customCommand)</code></pre>
+            </section>
+
+            <section class="example-section">
+                <h2>Message Filtering</h2>
+                <p>How messages are filtered:</p>
+                <pre><code>-- Automatic filtering using Roblox TextService
+local filteredMessage = MessageHandler.filterText(message, player.UserId)
+ChatEvents.sendMessage(player.Name, filteredMessage, "Normal")</code></pre>
+            </section>
+
+            <section class="example-section">
+                <h2>Custom Colors</h2>
+                <p>Customizing the chat appearance:</p>
+                <pre><code>-- In ChatConfig.luau
+ChatConfig.CHAT_CONFIG.Colors = {
+    Background = Color3.fromRGB(25, 25, 25),
+    Text = Color3.fromRGB(255, 255, 255),
+    Accent = Color3.fromRGB(0, 162, 255)
+}</code></pre>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SimpleChatService. Open source chat system for Roblox.</p>
+        </div>
+    </footer>
+</body>
+</html>
