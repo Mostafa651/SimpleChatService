@@ -1,8 +1,8 @@
 # GitHub Pages Configuration
 title: Advanced Roblox Chat System
 description: Professional, secure, and feature-rich chat solution for Roblox games
-url: "https://YOUR-USERNAME.github.io"
-baseurl: "/YOUR-REPOSITORY-NAME"
+url: "https://SimpleChatService.github.io"
+baseurl: "/SimpleChatService"
 
 # Build settings
 markdown: kramdown
