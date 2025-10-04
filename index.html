@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Roblox Chat System - Professional, secure, and feature-rich chat solution for Roblox games">
+    <meta name="keywords" content="Roblox, Chat System, Game Development, Lua, Admin Commands, Security">
+    <meta name="author" content="Advanced Roblox Chat System Team">
+    <meta property="og:title" content="Advanced Roblox Chat System">
+    <meta property="og:description" content="Professional, secure, and feature-rich chat solution for Roblox games">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-username.github.io/advanced-roblox-chat-system/">
+    <title>Advanced Roblox Chat System - Professional Chat Solution</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-comments"></i>
+                <span>Advanced Chat</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo" class="nav-link">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#docs" class="nav-link">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">Download</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Advanced Roblox</span><br>
+                        Chat System
+                    </h1>
+                    <p class="hero-description">
+                        A professional, high-performance chat system built with GoodSignal technology. 
+                        Features advanced admin commands, multi-language support, and modern UI design.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50%</span>
+                            <span class="stat-label">Faster Performance</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Languages Supported</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Admin Commands</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download Now
+                        </a>
+                        <a href="#demo" class="btn btn-secondary">
+                            <i class="fas fa-play"></i>
+                            View Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="chat-preview">
+                        <div class="chat-window">
+                            <div class="chat-header">
+                                <div class="chat-title">Game Chat</div>
+                                <div class="chat-controls">
+                                    <span class="control"></span>
+                                    <span class="control"></span>
+                                    <span class="control"></span>
+                                </div>
+                            </div>
+                            <div class="chat-messages" id="demo-messages">
+                                <div class="message system">
+                                    <span class="message-text">Welcome to Advanced Chat System!</span>
+                                </div>
+                                <div class="message player">
+                                    <span class="message-author">Player1:</span>
+                                    <span class="message-text">This chat system is amazing! 🚀</span>
+                                </div>
+                                <div class="message admin">
+                                    <span class="message-author">Admin:</span>
+                                    <span class="message-text">Thanks! Enjoy the enhanced features.</span>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Type your message..." readonly>
+                                <button><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+            <div class="floating-element" style="--delay: 2s; --duration: 10s;"></div>
+            <div class="floating-element" style="--delay: 4s; --duration: 12s;"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-description">
+                    Everything you need for a professional chat experience in your Roblox game
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">
+                        Built with GoodSignal technology for 50% faster performance than traditional RemoteEvents.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Advanced Security</h3>
+                    <p class="feature-description">
+                        Comprehensive message filtering, rate limiting, and admin permission validation.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="feature-title">Admin Commands</h3>
+                    <p class="feature-description">
+                        Full suite of moderation tools including kick, mute, announce, and more.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">Multi-Language</h3>
+                    <p class="feature-description">
+                        Support for 5 languages: English, Spanish, French, German, and Portuguese.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Responsive Design</h3>
+                    <p class="feature-description">
+                        Modern UI that works perfectly on all devices and screen sizes.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="feature-title">Highly Configurable</h3>
+                    <p class="feature-description">
+                        Extensive configuration options to customize the chat system for your needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="performance">
+        <div class="container">
+            <div class="performance-content">
+                <div class="performance-text">
+                    <h2 class="section-title">Unmatched Performance</h2>
+                    <p class="section-description">
+                        Our GoodSignal-based architecture delivers superior performance compared to traditional chat systems.
+                    </p>
+                    <div class="performance-metrics">
+                        <div class="metric">
+                            <div class="metric-value">50%</div>
+                            <div class="metric-label">Faster Message Delivery</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">30%</div>
+                            <div class="metric-label">Less Memory Usage</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">99.9%</div>
+                            <div class="metric-label">Uptime Reliability</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="performance-chart">
+                    <canvas id="performanceChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactive Demo</h2>
+                <p class="section-description">
+                    Experience the chat system in action with our interactive preview
+                </p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-chat">
+                    <div class="demo-header">
+                        <h3>Live Chat Preview</h3>
+                        <div class="demo-controls">
+                            <button class="demo-btn" onclick="addDemoMessage()">
+                                <i class="fas fa-plus"></i> Add Message
+                            </button>
+                            <button class="demo-btn" onclick="clearDemoChat()">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    <div class="demo-messages" id="demo-chat-messages">
+                        <div class="demo-message system">
+                            <span class="demo-timestamp">12:00</span>
+                            <span class="demo-text">Welcome to the Advanced Chat System!</span>
+                        </div>
+                        <div class="demo-message player">
+                            <span class="demo-timestamp">12:01</span>
+                            <span class="demo-author">Player1:</span>
+                            <span class="demo-text">Hello everyone! 👋</span>
+                        </div>
+                        <div class="demo-message admin">
+                            <span class="demo-timestamp">12:02</span>
+                            <span class="demo-author">Admin:</span>
+                            <span class="demo-text">Welcome to the server! Enjoy your stay.</span>
+                        </div>
+                    </div>
+                    <div class="demo-input">
+                        <input type="text" id="demo-input-field" placeholder="Type a message..." maxlength="200">
+                        <button onclick="sendDemoMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="demo-features">
+                    <h3>Try These Features:</h3>
+                    <div class="feature-buttons">
+                        <button class="feature-btn" onclick="simulateAdminCommand()">
+                            <i class="fas fa-crown"></i> Admin Command
+                        </button>
+                        <button class="feature-btn" onclick="simulateSystemMessage()">
+                            <i class="fas fa-info-circle"></i> System Message
+                        </button>
+                        <button class="feature-btn" onclick="simulatePlayerJoin()">
+                            <i class="fas fa-user-plus"></i> Player Join
+                        </button>
+                        <button class="feature-btn" onclick="simulateEmoji()">
+                            <i class="fas fa-smile"></i> Emoji Support
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="docs" class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentation</h2>
+                <p class="section-description">
+                    Everything you need to get started and customize your chat system
+                </p>
+            </div>
+            <div class="docs-grid">
+                <a href="installation.html" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Installation Guide</h3>
+                    <p>Step-by-step instructions to set up the chat system in your game.</p>
+                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="configuration.html" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Configuration</h3>
+                    <p>Learn how to customize and configure the chat system for your needs.</p>
+                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="admin-commands.html" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Admin Commands</h3>
+                    <p>Complete reference for all available admin commands and permissions.</p>
+                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="api-reference.html" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>API Reference</h3>
+                    <p>Detailed API documentation for developers and advanced users.</p>
+                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="section-title">Ready to Get Started?</h2>
+                    <p class="section-description">
+                        Download the Advanced Roblox Chat System and transform your game's communication experience today.
+                    </p>
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Complete source code included</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Comprehensive documentation</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Free updates and support</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-check"></i>
+                            <span>MIT License - use anywhere</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-buttons">
+                    <a href="https://github.com/yourusername/advanced-roblox-chat/releases/latest" class="btn btn-primary btn-large">
+                        <i class="fab fa-github"></i>
+                        Download from GitHub
+                    </a>
+                    <a href="installation.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Installation Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-comments"></i>
+                        <span>Advanced Chat</span>
+                    </div>
+                    <p class="footer-description">
+                        Professional chat system for Roblox games with advanced features and modern design.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Documentation</h3>
+                    <ul class="footer-links">
+                        <li><a href="installation.html">Installation</a></li>
+                        <li><a href="configuration.html">Configuration</a></li>
+                        <li><a href="admin-commands.html">Admin Commands</a></li>
+                        <li><a href="api-reference.html">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/yourusername/advanced-roblox-chat">GitHub</a></li>
+                        <li><a href="https://github.com/yourusername/advanced-roblox-chat/issues">Issues</a></li>
+                        <li><a href="https://github.com/yourusername/advanced-roblox-chat/discussions">Discussions</a></li>
+                        <li><a href="contributing.html">Contributing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Advanced Roblox Chat System. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
