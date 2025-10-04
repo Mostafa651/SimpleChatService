@@ -46,31 +46,49 @@ function initEnhancedNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const navToggle = document.querySelector('.nav-toggle');
     
-    // Mobile menu toggle
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
+    // Mobile menu toggle - check if elements exist
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
+    
+    // Alternative nav toggle for different pages
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
     
     // Close menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.classList.remove('menu-open');
+    if (navLinks.length > 0) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (hamburger) hamburger.classList.remove('active');
+                if (navToggle) navToggle.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
         });
-    });
+    }
     
     // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!navbar.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-    });
+    if (navbar && hamburger && navMenu) {
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target)) {
+                if (hamburger) hamburger.classList.remove('active');
+                if (navToggle) navToggle.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+    }
     
     // Navbar scroll effect
     window.addEventListener('scroll', () => {
@@ -185,6 +203,11 @@ function initEnhancedChatDemo() {
     const chatMessages = document.getElementById('chatMessages');
     const chatInput = document.getElementById('chatInput');
     const sendButton = document.getElementById('sendMessage');
+    
+    // Check if elements exist before proceeding
+    if (!chatMessages || !chatInput || !sendButton) {
+        return; // Exit if chat demo elements don't exist
+    }
     
     const demoMessages = [
         { user: 'Player1', message: 'Hey everyone! 👋', type: 'user' },
