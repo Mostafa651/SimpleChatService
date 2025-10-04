@@ -24,23 +24,17 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-comments"></i>
-                <span>Advanced Chat</span>
+                <span>SimpleChatService</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#features" class="nav-link">Features</a>
+                    <a href="installation.html" class="nav-link">Download</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#demo" class="nav-link">Demo</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#docs" class="nav-link">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#download" class="nav-link">Download</a>
+                    <a href="documentation.html" class="nav-link">Docs</a>
                 </li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -77,13 +71,13 @@
                         </div>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#download" class="btn btn-primary">
+                        <a href="installation.html" class="btn btn-primary">
                             <i class="fas fa-download"></i>
                             Download Now
                         </a>
-                        <a href="#demo" class="btn btn-secondary">
-                            <i class="fas fa-play"></i>
-                            View Demo
+                        <a href="documentation.html" class="btn btn-secondary">
+                            <i class="fas fa-book"></i>
+                            Documentation
                         </a>
                     </div>
                 </div>
@@ -100,15 +94,15 @@
                             </div>
                             <div class="chat-messages" id="demo-messages">
                                 <div class="message system">
-                                    <span class="message-text">Welcome to Advanced Chat System!</span>
+                                    <span class="message-text">Welcome to SimpleChatService!</span>
                                 </div>
                                 <div class="message player">
                                     <span class="message-author">Player1:</span>
-                                    <span class="message-text">This chat system is amazing! 🚀</span>
+                                    <span class="message-text">Hello everyone!</span>
                                 </div>
                                 <div class="message admin">
                                     <span class="message-author">Admin:</span>
-                                    <span class="message-text">Thanks! Enjoy the enhanced features.</span>
+                                    <span class="message-text">Welcome to the server!</span>
                                 </div>
                             </div>
                             <div class="chat-input">
@@ -164,145 +158,29 @@
         </div>
     </section>
 
-    <!-- Performance Section -->
-    <section id="performance" class="performance-section">
-        <div class="container">
-            <h2 class="section-title">Simple & Reliable</h2>
-            <p class="section-description">
-                Built with Lua for Roblox games. Easy to install and customize.
-            </p>
-        </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section id="demo" class="demo">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Interactive Demo</h2>
-                <p class="section-description">
-                    Experience the chat system in action with our interactive preview
-                </p>
-            </div>
-            <div class="demo-container">
-                <div class="demo-chat">
-                    <div class="demo-header">
-                        <h3>Live Chat Preview</h3>
-                        <div class="demo-controls">
-                            <button class="demo-btn" onclick="addDemoMessage()">
-                                <i class="fas fa-plus"></i> Add Message
-                            </button>
-                            <button class="demo-btn" onclick="clearDemoChat()">
-                                <i class="fas fa-trash"></i> Clear
-                            </button>
-                        </div>
-                    </div>
-                    <div class="demo-messages" id="demo-chat-messages">
-                        <div class="demo-message system">
-                            <span class="demo-timestamp">12:00</span>
-                            <span class="demo-text">Welcome to the Advanced Chat System!</span>
-                        </div>
-                        <div class="demo-message player">
-                            <span class="demo-timestamp">12:01</span>
-                            <span class="demo-author">Player1:</span>
-                            <span class="demo-text">Hello everyone! 👋</span>
-                        </div>
-                        <div class="demo-message admin">
-                            <span class="demo-timestamp">12:02</span>
-                            <span class="demo-author">Admin:</span>
-                            <span class="demo-text">Welcome to the server! Enjoy your stay.</span>
-                        </div>
-                    </div>
-                    <div class="demo-input">
-                        <input type="text" id="demo-input-field" placeholder="Type a message..." maxlength="200">
-                        <button onclick="sendDemoMessage()">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="demo-features">
-                    <h3>Try These Features:</h3>
-                    <div class="feature-buttons">
-                        <button class="feature-btn" onclick="simulateAdminCommand()">
-                            <i class="fas fa-crown"></i> Admin Command
-                        </button>
-                        <button class="feature-btn" onclick="simulateSystemMessage()">
-                            <i class="fas fa-info-circle"></i> System Message
-                        </button>
-                        <button class="feature-btn" onclick="simulatePlayerJoin()">
-                            <i class="fas fa-user-plus"></i> Player Join
-                        </button>
-                        <button class="feature-btn" onclick="simulateEmoji()">
-                            <i class="fas fa-smile"></i> Emoji Support
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Documentation Section -->
-    <section id="docs" class="documentation">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Documentation</h2>
-                <p class="section-description">
-                    Everything you need to get started and customize your chat system
-                </p>
-            </div>
-            <div class="docs-grid">
-                <a href="installation.html" class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Installation Guide</h3>
-                    <p>Step-by-step instructions to set up the chat system in your game.</p>
-                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="configuration.html" class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <h3>Configuration</h3>
-                    <p>Learn how to customize and configure the chat system for your needs.</p>
-                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="admin-commands.html" class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <h3>Admin Commands</h3>
-                    <p>Complete reference for all available admin commands and permissions.</p>
-                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="api-reference.html" class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>API Reference</h3>
-                    <p>Detailed API documentation for developers and advanced users.</p>
-                    <span class="doc-link">Read More <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Download Section -->
     <section id="download" class="download-section">
         <div class="container">
-            <h2>Get SimpleChatService</h2>
-            <p>Download and start using it in your Roblox game.</p>
-            <div class="download-buttons">
-                <a href="https://www.roblox.com/library/YOUR-MODEL-ID/SimpleChatService" class="btn btn-primary" target="_blank">
-                    <i class="icon">🎮</i>
-                    Get from Roblox
+            <div class="section-header">
+                <h2 class="section-title">Get Started</h2>
+                <p class="section-description">
+                    Download SimpleChatService and add it to your Roblox game
+                </p>
+            </div>
+            <div class="download-options">
+                <a href="installation.html" class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Roblox Marketplace</h3>
+                    <p>Get it directly from Roblox Studio</p>
                 </a>
-                <a href="assets/SimpleChatService.rbxm" class="btn btn-secondary" download>
-                    <i class="icon">📦</i>
-                    Download RBXM
-                </a>
-                <a href="https://github.com/mostafa651/SimpleChatService" class="btn btn-outline" target="_blank">
-                    <i class="icon">📚</i>
-                    View on GitHub
+                <a href="assets/SimpleChatService.rbxm" class="download-card" download>
+                    <div class="download-icon">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <h3>RBXM File</h3>
+                    <p>Download and import manually</p>
                 </a>
             </div>
         </div>
@@ -315,42 +193,22 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <i class="fas fa-comments"></i>
-                        <span>Advanced Chat</span>
+                        <span>SimpleChatService</span>
                     </div>
                     <p class="footer-description">
-                        Professional chat system for Roblox games with advanced features and modern design.
+                        Simple chat system for Roblox games.
                     </p>
                 </div>
                 <div class="footer-section">
-                    <h3>Documentation</h3>
+                    <h3>Links</h3>
                     <ul class="footer-links">
+                        <li><a href="documentation.html">Documentation</a></li>
                         <li><a href="installation.html">Installation</a></li>
-                        <li><a href="configuration.html">Configuration</a></li>
-                        <li><a href="admin-commands.html">Admin Commands</a></li>
-                        <li><a href="api-reference.html">API Reference</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Community</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://github.com/yourusername/advanced-roblox-chat">GitHub</a></li>
-                        <li><a href="https://github.com/yourusername/advanced-roblox-chat/issues">Issues</a></li>
-                        <li><a href="https://github.com/yourusername/advanced-roblox-chat/discussions">Discussions</a></li>
-                        <li><a href="contributing.html">Contributing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul class="footer-links">
-                        <li><a href="troubleshooting.html">Troubleshooting</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="changelog.html">Changelog</a></li>
-                        <li><a href="security.html">Security</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Advanced Roblox Chat System. Released under MIT License.</p>
+                <p>&copy; 2025 SimpleChatService. Released under MIT License.</p>
             </div>
         </div>
     </footer>
