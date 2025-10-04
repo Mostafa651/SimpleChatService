@@ -92,6 +92,14 @@
     --transition-fast: 150ms ease-in-out;
     --transition-normal: 300ms ease-in-out;
     --transition-slow: 500ms ease-in-out;
+    
+    /* Text Colors */
+    --text-primary: var(--chat-text);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    
+    /* Component Colors */
+    --card-bg: var(--chat-bg-light);
+    --border-color: var(--chat-border);
 }
 
 html {
