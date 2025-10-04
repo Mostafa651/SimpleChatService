@@ -1,4 +1,4 @@
-// Main JavaScript for Advanced Roblox Chat System Documentation
+// Main JavaScript for SimpleChatService Documentation
 
 // DOM Elements
 const navbar = document.querySelector('.navbar');

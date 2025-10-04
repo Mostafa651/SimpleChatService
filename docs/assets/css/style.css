@@ -36,6 +36,13 @@
     --chat-accent: rgb(0, 162, 255);
     --chat-border: rgb(60, 60, 60);
     
+    /* Override white variables for dark theme */
+    --white: rgb(35, 35, 40);
+    --gray-50: rgb(30, 30, 35);
+    --gray-100: rgb(35, 35, 40);
+    --gray-200: rgb(40, 40, 45);
+    --gray-300: rgb(50, 50, 55);
+    
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-size-xs: 0.75rem;
@@ -846,6 +853,62 @@ body.menu-open {
 }
 
 /* Download Section */
+.download-section {
+    padding: var(--spacing-20) 0;
+    background: var(--chat-bg);
+    color: var(--chat-text);
+}
+
+.download-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-8);
+}
+
+.download-card {
+    background: var(--chat-bg-light);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    color: var(--chat-text);
+    border: 1px solid var(--chat-border);
+    transition: all var(--transition-normal);
+    text-align: center;
+    display: block;
+}
+
+.download-card:hover {
+    background: var(--chat-bg-lighter);
+    transform: translateY(-4px);
+    border-color: var(--chat-accent);
+}
+
+.download-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--chat-accent);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-4);
+    font-size: var(--font-size-xl);
+    color: white;
+}
+
+.download-card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-2);
+    color: var(--chat-text);
+}
+
+.download-card p {
+    color: var(--gray-400);
+    font-size: var(--font-size-sm);
+}
+
 .download {
     padding: var(--spacing-20) 0;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
