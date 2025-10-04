@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide - Advanced Roblox Chat System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Step-by-step installation guide for the Advanced Roblox Chat System">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>💬</span>
+                Advanced Chat System
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="installation.html" class="nav-link">Installation</a></li>
+                <li><a href="documentation.html" class="nav-link">Documentation</a></li>
+                <li><a href="api.html" class="nav-link">API</a></li>
+                <li><a href="examples.html" class="nav-link">Examples</a></li>
+                <li><a href="https://github.com/yourusername/advanced-roblox-chat" class="nav-link">GitHub</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Installation Guide -->
+    <main class="installation-guide">
+        <div class="container">
+            <!-- Header -->
+            <section class="guide-header">
+                <h1>Installation Guide</h1>
+                <p class="guide-description">
+                    Get your Advanced Roblox Chat System up and running in minutes with our comprehensive installation guide.
+                </p>
+                
+                <!-- Quick Navigation -->
+                <div class="quick-nav">
+                    <a href="#prerequisites" class="quick-nav-link">Prerequisites</a>
+                    <a href="#download" class="quick-nav-link">Download</a>
+                    <a href="#setup" class="quick-nav-link">Setup</a>
+                    <a href="#configuration" class="quick-nav-link">Configuration</a>
+                    <a href="#testing" class="quick-nav-link">Testing</a>
+                </div>
+            </section>
+
+            <!-- Prerequisites -->
+            <section id="prerequisites" class="guide-section">
+                <h2>📋 Prerequisites</h2>
+                <div class="prerequisites-grid">
+                    <div class="prerequisite-card">
+                        <div class="prerequisite-icon">🎮</div>
+                        <h3>Roblox Studio</h3>
+                        <p>Latest version of Roblox Studio installed</p>
+                        <a href="https://www.roblox.com/create" class="btn btn-secondary">Download Studio</a>
+                    </div>
+                    <div class="prerequisite-card">
+                        <div class="prerequisite-icon">📁</div>
+                        <h3>Game Project</h3>
+                        <p>An existing Roblox game project or new place</p>
+                    </div>
+                    <div class="prerequisite-card">
+                        <div class="prerequisite-icon">⚙️</div>
+                        <h3>Basic Knowledge</h3>
+                        <p>Understanding of Roblox scripting and game structure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download -->
+            <section id="download" class="guide-section">
+                <h2>📥 Download</h2>
+                <div class="download-options">
+                    <div class="download-card primary">
+                        <div class="download-header">
+                            <h3>GitHub Release</h3>
+                            <span class="version-badge">v1.0.0</span>
+                        </div>
+                        <p>Download the latest stable release from GitHub</p>
+                        <ul class="download-features">
+                            <li>✅ Complete source code</li>
+                            <li>✅ Documentation included</li>
+                            <li>✅ Example configurations</li>
+                            <li>✅ Community support</li>
+                        </ul>
+                        <a href="https://github.com/yourusername/advanced-roblox-chat/releases" class="btn btn-primary btn-large">
+                            Download from GitHub
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-header">
+                            <h3>Clone Repository</h3>
+                            <span class="version-badge">Latest</span>
+                        </div>
+                        <p>Clone the repository for the latest development version</p>
+                        <div class="code-block">
+                            <code>git clone https://github.com/yourusername/advanced-roblox-chat.git</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Setup -->
+            <section id="setup" class="guide-section">
+                <h2>🔧 Setup Process</h2>
+                
+                <!-- Step-by-step guide -->
+                <div class="setup-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Extract Files</h3>
+                            <p>Extract the downloaded files to a convenient location on your computer.</p>
+                            <div class="step-visual">
+                                <div class="file-structure">
+                                    <div class="folder">📁 advanced-roblox-chat/</div>
+                                    <div class="folder indent">📁 src/</div>
+                                    <div class="folder indent2">📁 client/</div>
+                                    <div class="folder indent2">📁 server/</div>
+                                    <div class="folder indent2">📁 shared/</div>
+                                    <div class="file indent">📄 README.md</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Open Roblox Studio</h3>
+                            <p>Launch Roblox Studio and open your game project.</p>
+                            <div class="tip-box">
+                                <strong>💡 Tip:</strong> Make sure to create a backup of your existing game before installing the chat system.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Import Server Scripts</h3>
+                            <p>Copy the server-side scripts to ServerScriptService:</p>
+                            <ul class="file-list">
+                                <li>📄 ChatSystemServer.luau → ServerScriptService</li>
+                                <li>📄 AdminCommands.luau → ServerScriptService</li>
+                                <li>📄 PlayerManager.luau → ServerScriptService</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Import Client Scripts</h3>
+                            <p>Copy the client-side scripts to StarterPlayerScripts:</p>
+                            <ul class="file-list">
+                                <li>📄 ChatSystemClient.luau → StarterPlayer > StarterPlayerScripts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Import Shared Modules</h3>
+                            <p>Copy the shared modules to ReplicatedStorage:</p>
+                            <ul class="file-list">
+                                <li>📄 GoodSignal.luau → ReplicatedStorage</li>
+                                <li>📄 ChatEvents.luau → ReplicatedStorage</li>
+                                <li>📄 ChatConfig.luau → ReplicatedStorage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>Import UI Elements</h3>
+                            <p>Copy the UI components to StarterGui:</p>
+                            <ul class="file-list">
+                                <li>📄 ChatGui.rbxm → StarterGui</li>
+                            </ul>
+                            <div class="warning-box">
+                                <strong>⚠️ Warning:</strong> This will replace the default Roblox chat system. Make sure this is intended.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Configuration -->
+            <section id="configuration" class="guide-section">
+                <h2>⚙️ Configuration</h2>
+                
+                <div class="config-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="showTab('basic')">Basic Settings</button>
+                        <button class="tab-btn" onclick="showTab('advanced')">Advanced</button>
+                        <button class="tab-btn" onclick="showTab('security')">Security</button>
+                    </div>
+
+                    <div id="basic" class="tab-content active">
+                        <h3>Basic Configuration</h3>
+                        <p>Edit the <code>ChatConfig.luau</code> file to customize basic settings:</p>
+                        
+                        <div class="config-option">
+                            <h4>Chat Settings</h4>
+                            <div class="code-block">
+<pre><code>-- Basic chat configuration
+Config.MaxMessageLength = 200
+Config.MessageCooldown = 1 -- seconds
+Config.EnableEmojis = true
+Config.EnableMarkdown = false</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="config-option">
+                            <h4>UI Customization</h4>
+                            <div class="code-block">
+<pre><code>-- UI appearance settings
+Config.Theme = {
+    PrimaryColor = Color3.fromRGB(99, 102, 241),
+    BackgroundColor = Color3.fromRGB(255, 255, 255),
+    TextColor = Color3.fromRGB(31, 41, 55)
+}</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="advanced" class="tab-content">
+                        <h3>Advanced Configuration</h3>
+                        <p>Configure advanced features and performance settings:</p>
+                        
+                        <div class="config-option">
+                            <h4>Performance Settings</h4>
+                            <div class="code-block">
+<pre><code>-- Performance optimization
+Config.MaxChatHistory = 100
+Config.MessageBatchSize = 10
+Config.UpdateInterval = 0.1
+Config.EnableCompression = true</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="config-option">
+                            <h4>Feature Toggles</h4>
+                            <div class="code-block">
+<pre><code>-- Feature configuration
+Config.Features = {
+    AdminCommands = true,
+    PlayerMentions = true,
+    ChatChannels = false,
+    VoiceChat = false,
+    FileSharing = false
+}</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="security" class="tab-content">
+                        <h3>Security Configuration</h3>
+                        <p>Configure security and moderation settings:</p>
+                        
+                        <div class="config-option">
+                            <h4>Rate Limiting</h4>
+                            <div class="code-block">
+<pre><code>-- Rate limiting configuration
+Config.RateLimit = {
+    MaxMessages = 5,
+    TimeWindow = 10, -- seconds
+    PenaltyDuration = 30 -- seconds
+}</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="config-option">
+                            <h4>Content Filtering</h4>
+                            <div class="code-block">
+<pre><code>-- Content moderation
+Config.Moderation = {
+    EnableFilter = true,
+    StrictMode = false,
+    BannedWords = {},
+    AutoMute = true
+}</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testing -->
+            <section id="testing" class="guide-section">
+                <h2>🧪 Testing</h2>
+                
+                <div class="testing-checklist">
+                    <h3>Installation Checklist</h3>
+                    <div class="checklist">
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            All scripts are in the correct locations
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            No script errors in the output window
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Chat GUI appears in game
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Messages can be sent and received
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Admin commands work (if applicable)
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Rate limiting functions properly
+                        </label>
+                    </div>
+                </div>
+
+                <div class="test-scenarios">
+                    <h3>Test Scenarios</h3>
+                    <div class="scenario-grid">
+                        <div class="scenario-card">
+                            <h4>🔄 Basic Functionality</h4>
+                            <ol>
+                                <li>Start a test server</li>
+                                <li>Join with multiple players</li>
+                                <li>Send messages between players</li>
+                                <li>Verify message delivery</li>
+                            </ol>
+                        </div>
+                        <div class="scenario-card">
+                            <h4>👮 Admin Commands</h4>
+                            <ol>
+                                <li>Grant admin permissions</li>
+                                <li>Test mute/unmute commands</li>
+                                <li>Test kick/ban commands</li>
+                                <li>Verify command responses</li>
+                            </ol>
+                        </div>
+                        <div class="scenario-card">
+                            <h4>⚡ Performance</h4>
+                            <ol>
+                                <li>Send rapid messages</li>
+                                <li>Test rate limiting</li>
+                                <li>Monitor memory usage</li>
+                                <li>Check for lag or delays</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section class="guide-section">
+                <h2>🔧 Troubleshooting</h2>
+                
+                <div class="troubleshooting-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Chat GUI doesn't appear</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Possible causes:</strong></p>
+                            <ul>
+                                <li>ChatGui.rbxm not properly imported to StarterGui</li>
+                                <li>Client script not running</li>
+                                <li>Script errors preventing initialization</li>
+                            </ul>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Check the Output window for errors</li>
+                                <li>Verify all files are in correct locations</li>
+                                <li>Restart the test server</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Messages not sending</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Possible causes:</strong></p>
+                            <ul>
+                                <li>Server scripts not running</li>
+                                <li>Signal system not initialized</li>
+                                <li>Rate limiting blocking messages</li>
+                            </ul>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Check ServerScriptService for errors</li>
+                                <li>Verify GoodSignal module is accessible</li>
+                                <li>Test with slower message sending</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Admin commands not working</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><strong>Possible causes:</strong></p>
+                            <ul>
+                                <li>Player doesn't have admin permissions</li>
+                                <li>AdminCommands script not running</li>
+                                <li>Incorrect command syntax</li>
+                            </ul>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Add your UserId to the admin list</li>
+                                <li>Check command syntax in documentation</li>
+                                <li>Verify AdminCommands.luau is in ServerScriptService</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Steps -->
+            <section class="guide-section">
+                <h2>🚀 Next Steps</h2>
+                <div class="next-steps-grid">
+                    <a href="documentation.html" class="next-step-card">
+                        <div class="step-icon">📚</div>
+                        <h3>Read Documentation</h3>
+                        <p>Learn about all features and customization options</p>
+                    </a>
+                    <a href="api.html" class="next-step-card">
+                        <div class="step-icon">🔧</div>
+                        <h3>API Reference</h3>
+                        <p>Explore the complete API for advanced customization</p>
+                    </a>
+                    <a href="examples.html" class="next-step-card">
+                        <div class="step-icon">💡</div>
+                        <h3>View Examples</h3>
+                        <p>See practical examples and use cases</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>💬</span>
+                        Advanced Chat System
+                    </div>
+                    <p class="footer-description">
+                        The most advanced and feature-rich chat system for Roblox games.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Documentation</h3>
+                    <ul class="footer-links">
+                        <li><a href="installation.html">Installation</a></li>
+                        <li><a href="documentation.html">User Guide</a></li>
+                        <li><a href="api.html">API Reference</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Issues</a></li>
+                        <li><a href="#">Discussions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Feature Requests</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Advanced Roblox Chat System. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab and mark button as active
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Accordion functionality
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = '-';
+            }
+        }
+
+        // Copy to clipboard functionality
+        function copyToClipboard(button) {
+            const codeBlock = button.previousElementSibling;
+            const text = codeBlock.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                }, 2000);
+            });
+        }
+
+        // Checklist functionality
+        document.querySelectorAll('.checklist-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.parentElement.classList.add('completed');
+                } else {
+                    this.parentElement.classList.remove('completed');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
