@@ -3,185 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional, secure, and feature-rich chat solution for Roblox games with advanced admin commands, multi-language support, and modern UI.">
-    <meta name="keywords" content="Roblox, Chat System, SimpleChatService, Admin Commands, Multi-language, Security">
-    <meta name="author" content="SimpleChatService Team">
-    <meta property="og:title" content="SimpleChatService - Professional Roblox Chat System">
-    <meta property="og:description" content="Professional, secure, and feature-rich chat solution for Roblox games">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mostafa651.github.io/SimpleChatService/">
-    <title>SimpleChatService - Professional Roblox Chat System</title>
+    <title>SimpleChatService - Simple Roblox Chat System</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="A simple and clean chat system for Roblox games">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-comments"></i>
-                <span>SimpleChatService</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="installation.html" class="nav-link">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a href="documentation.html" class="nav-link">Docs</a>
-                </li>
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">💬</span>
+                <span class="logo-text">SimpleChatService</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="installation.html" class="nav-link">Installation</a></li>
+                <li><a href="documentation.html" class="nav-link">Documentation</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="gradient-text">SimpleChatService</span>
-                    </h1>
-                    <p class="hero-description">
-                        A clean chat system for Roblox with admin commands and basic moderation.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">Open Source</span>
-                            <span class="stat-label">Free to Use</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Easy Setup</span>
-                            <span class="stat-label">Plug & Play</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Admin Tools</span>
-                            <span class="stat-label">Built-in</span>
-                        </div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="installation.html" class="btn btn-primary">
-                            <i class="fas fa-download"></i>
-                            Download Now
-                        </a>
-                        <a href="documentation.html" class="btn btn-secondary">
-                            <i class="fas fa-book"></i>
-                            Documentation
-                        </a>
-                    </div>
+                <h1 class="hero-title">
+                    <span class="title-main">SimpleChatService</span>
+                    <span class="title-sub">Clean & Simple Chat for Roblox</span>
+                </h1>
+                <p class="hero-description">
+                    A lightweight, easy-to-use chat system for your Roblox games. 
+                    No bloat, no complexity - just clean messaging that works.
+                </p>
+                <div class="hero-buttons">
+                    <a href="installation.html" class="btn btn-primary">
+                        <span class="btn-icon">⚡</span>
+                        Get Started
+                    </a>
+                    <a href="documentation.html" class="btn btn-secondary">
+                        <span class="btn-icon">📖</span>
+                        Documentation
+                    </a>
                 </div>
-                <div class="hero-visual">
-                    <div class="chat-preview">
-                        <div class="chat-window">
-                            <div class="chat-header">
-                                <div class="chat-title">Game Chat</div>
-                                <div class="chat-controls">
-                                    <span class="control"></span>
-                                    <span class="control"></span>
-                                    <span class="control"></span>
-                                </div>
-                            </div>
-                            <div class="chat-messages" id="demo-messages">
-                                <div class="message system">
-                                    <span class="message-text">Welcome to SimpleChatService!</span>
-                                </div>
-                                <div class="message player">
-                                    <span class="message-author">Player1:</span>
-                                    <span class="message-text">Hello everyone!</span>
-                                </div>
-                                <div class="message admin">
-                                    <span class="message-author">Admin:</span>
-                                    <span class="message-text">Welcome to the server!</span>
-                                </div>
-                            </div>
-                            <div class="chat-input">
-                                <input type="text" placeholder="Type your message..." readonly>
-                                <button><i class="fas fa-paper-plane"></i></button>
-                            </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chat-preview">
+                    <div class="chat-header">
+                        <span class="chat-title">Game Chat</span>
+                        <div class="chat-status online"></div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message">
+                            <span class="username">Player1:</span>
+                            <span class="text">Hello everyone!</span>
+                        </div>
+                        <div class="message">
+                            <span class="username">Player2:</span>
+                            <span class="text">Hey there! 👋</span>
+                        </div>
+                        <div class="message typing">
+                            <span class="username">Player3:</span>
+                            <span class="text">
+                                <span class="typing-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-background">
-            <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
-            <div class="floating-element" style="--delay: 2s; --duration: 10s;"></div>
-            <div class="floating-element" style="--delay: 4s; --duration: 12s;"></div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features-section">
+    <section class="features">
         <div class="container">
-            <h2 class="section-title">What's Included</h2>
+            <div class="section-header">
+                <h2>What SimpleChatService Actually Does</h2>
+                <p>Real features, no fake promises</p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
-                    <h3>Basic Chat</h3>
-                    <p>Simple messaging system with user interface.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Admin Commands</h3>
-                    <p>Kick, mute, and basic moderation tools.</p>
+                    <h3>Basic Messaging</h3>
+                    <p>Send and receive messages in your Roblox game. Simple, clean, and reliable.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚙️</div>
-                    <h3>Configurable</h3>
-                    <p>Customize settings and appearance.</p>
+                    <h3>Easy Configuration</h3>
+                    <p>Simple config file to customize message limits, colors, and basic settings.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📝</div>
-                    <h3>Message Filtering</h3>
-                    <p>Basic content moderation and spam prevention.</p>
+                    <div class="feature-icon">🔧</div>
+                    <h3>Modular Design</h3>
+                    <p>Clean code structure with separate modules for different chat functions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Clean UI</h3>
+                    <p>Simple chat interface that doesn't get in the way of your game.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About SimpleChatService</h2>
-            <p>A basic chat system for Roblox with admin commands and message filtering. Open source and easy to set up.</p>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="download-section">
+    <section class="download">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get Started</h2>
+            <div class="download-content">
+                <h2 class="section-title">Ready to Use SimpleChatService?</h2>
                 <p class="section-description">
-                    Download SimpleChatService and add it to your Roblox game
+                    Download the .rbxm file and add it to your Roblox game in seconds.
                 </p>
-            </div>
-            <div class="download-options">
-                <a href="installation.html" class="download-card">
-                    <div class="download-icon">
-                        <i class="fas fa-cube"></i>
+                <div class="download-options">
+                    <div class="download-card">
+                        <div class="download-icon">📦</div>
+                        <h3>Download .rbxm</h3>
+                        <p>Get the SimpleChatService model file</p>
+                        <a href="assets/SimpleChatService.rbxm" class="btn btn-primary" download>
+                            <span class="btn-icon">⬇️</span>
+                            Download Now
+                        </a>
                     </div>
-                    <h3>Roblox Marketplace</h3>
-                    <p>Get it directly from Roblox Studio</p>
-                </a>
-                <a href="assets/SimpleChatService.rbxm" class="download-card" download>
-                    <div class="download-icon">
-                        <i class="fas fa-file-download"></i>
+                    <div class="download-card">
+                        <div class="download-icon">📋</div>
+                        <h3>Installation Guide</h3>
+                        <p>Step-by-step setup instructions</p>
+                        <a href="installation.html" class="btn btn-secondary">
+                            <span class="btn-icon">🔧</span>
+                            View Guide
+                        </a>
                     </div>
-                    <h3>RBXM File</h3>
-                    <p>Download and import manually</p>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -190,32 +151,39 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-main">
                     <div class="footer-logo">
-                        <i class="fas fa-comments"></i>
-                        <span>SimpleChatService</span>
+                        <span class="logo-icon">💬</span>
+                        <span class="logo-text">SimpleChatService</span>
                     </div>
                     <p class="footer-description">
-                        Simple chat system for Roblox games.
+                        A simple chat system for Roblox games. No fake features, just honest code.
                     </p>
                 </div>
-                <div class="footer-section">
-                    <h3>Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="installation.html">Installation</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="installation.html">Installation</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="assets/SimpleChatService.rbxm" download>Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#" class="discord-link">Discord Server</a></li>
+                            <li><a href="#" class="youtube-link">YouTube Tutorials</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SimpleChatService. Released under MIT License.</p>
+                <p>&copy; 2025 SimpleChatService. Simple and honest.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

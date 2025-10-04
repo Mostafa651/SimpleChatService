@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation Guide - SimpleChatService</title>
+    <title>Installation - SimpleChatService</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Simple installation guide for SimpleChatService">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <i class="fas fa-comments"></i>
-                SimpleChatService
+                <span class="logo-icon">💬</span>
+                <span class="logo-text">SimpleChatService</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="documentation.html" class="nav-link">Docs</a></li>
-                <li><a href="installation.html" class="nav-link active">Install</a></li>
-                <li><a href="api.html" class="nav-link">API</a></li>
-                <li><a href="examples.html" class="nav-link">Examples</a></li>
-                <li><a href="demo.html" class="nav-link">Demo</a></li>
+                <li><a href="installation.html" class="nav-link active">Installation</a></li>
+                <li><a href="documentation.html" class="nav-link">Documentation</a></li>
             </ul>
             <div class="nav-toggle">
                 <span class="bar"></span>
@@ -33,308 +29,301 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, var(--chat-bg) 0%, var(--chat-bg-light) 100%);">
+    <!-- Installation Hero -->
+    <section class="install-hero">
         <div class="container">
-            <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
-                <div class="animate-fade-in">
-                    <h1 class="hero-title" style="color: var(--chat-text);">
-                        <i class="fas fa-download animate-pulse" style="color: var(--chat-accent);"></i>
-                        Installation Guide
-                    </h1>
-                    <p class="hero-description" style="color: var(--gray-400);">
-                        Get SimpleChatService up and running in your Roblox game in just a few minutes
-                    </p>
-                </div>
+            <div class="install-header">
+                <h1>Installation Guide</h1>
+                <p>Get SimpleChatService running in your Roblox game in just a few simple steps</p>
             </div>
         </div>
     </section>
 
     <!-- Installation Steps -->
-    <section class="section" style="padding: var(--spacing-20) 0; background: var(--chat-bg);">
+    <main class="install-main">
         <div class="container">
-            <div class="section-header animate-fade-in">
-                <h2 class="section-title" style="color: var(--chat-text);">Quick Installation</h2>
-                <p class="section-description" style="color: var(--gray-400);">
-                    Choose your preferred installation method and follow the steps below
-                </p>
-            </div>
-
-            <!-- Method 1: Roblox Studio -->
-            <div class="installation-step animate-fade-in animate-delay-1">
-                <div class="step-number">1</div>
-                <h3 class="step-title">
-                    <i class="fas fa-cube" style="color: var(--chat-accent); margin-right: var(--spacing-2);"></i>
-                    Download from Roblox Marketplace
-                </h3>
-                <p class="step-description">
-                    The easiest way to get started. Download directly from the Roblox marketplace.
-                </p>
-                <div class="code-block">
-                    1. Open Roblox Studio<br>
-                    2. Go to Toolbox → Marketplace<br>
-                    3. Search for "SimpleChatService"<br>
-                    4. Click "Get Model" to add it to your game
+            <!-- Step 1: Download -->
+            <section class="install-step">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h2>Download SimpleChatService</h2>
+                        <p>Get the RBXM file to import into your game</p>
+                    </div>
                 </div>
-                <a href="#" class="btn btn-primary animate-glow">
-                    <i class="fas fa-external-link-alt"></i>
-                    Open Marketplace
-                </a>
-            </div>
-
-            <!-- Method 2: RBXM File -->
-            <div class="installation-step animate-fade-in animate-delay-2">
-                <div class="step-number">2</div>
-                <h3 class="step-title">
-                    <i class="fas fa-file-download" style="color: var(--chat-accent); margin-right: var(--spacing-2);"></i>
-                    Download RBXM File
-                </h3>
-                <p class="step-description">
-                    Download the model file and import it manually into your game.
-                </p>
-                <div class="code-block">
-                    1. Download SimpleChatService.rbxm<br>
-                    2. Open Roblox Studio<br>
-                    3. Right-click in Explorer → Insert from File<br>
-                    4. Select the downloaded RBXM file
+                
+                <div class="step-content">
+                    <div class="download-option">
+                        <div class="download-info">
+                            <h3>📁 RBXM File</h3>
+                            <p>Download the model file and import it directly into Roblox Studio</p>
+                        </div>
+                        <a href="assets/SimpleChatService.rbxm" class="btn btn-primary" download>
+                            <span class="btn-icon">⬇️</span>
+                            Download RBXM
+                        </a>
+                    </div>
                 </div>
-                <a href="assets/SimpleChatService.rbxm" class="btn btn-secondary" download>
-                    <i class="fas fa-download"></i>
-                    Download RBXM
-                </a>
-            </div>
+            </section>
 
-            <!-- Method 3: GitHub -->
-            <div class="installation-step animate-fade-in animate-delay-3">
-                <div class="step-number">3</div>
-                <h3 class="step-title">
-                    <i class="fab fa-github" style="color: var(--chat-accent); margin-right: var(--spacing-2);"></i>
-                    Clone from GitHub
-                </h3>
-                <p class="step-description">
-                    Get the latest source code and customize it to your needs.
-                </p>
-                <div class="code-block">
-                    git clone https://github.com/mostafa651/SimpleChatService.git<br>
-                    cd SimpleChatService<br>
-                    # Copy the source files to your Roblox project
+            <!-- Step 2: Import -->
+            <section class="install-step">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h2>Import into Roblox Studio</h2>
+                        <p>Add the chat system to your game</p>
+                    </div>
                 </div>
-                <a href="https://github.com/mostafa651/SimpleChatService" class="btn btn-secondary" target="_blank">
-                    <i class="fab fa-github"></i>
-                    View on GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Configuration Section -->
-    <section class="section" style="padding: var(--spacing-20) 0; background: var(--chat-bg-light);">
-        <div class="container">
-            <div class="section-header animate-fade-in">
-                <h2 class="section-title" style="color: var(--chat-text);">Configuration</h2>
-                <p class="section-description" style="color: var(--gray-400);">
-                    Customize SimpleChatService to match your game's needs
-                </p>
-            </div>
-
-            <div class="installation-step animate-fade-in animate-delay-1">
-                <div class="step-number">
-                    <i class="fas fa-cog"></i>
+                
+                <div class="step-content">
+                    <div class="import-instructions">
+                        <div class="instruction-item">
+                            <div class="instruction-icon">🎮</div>
+                            <div class="instruction-text">
+                                <h4>Open Roblox Studio</h4>
+                                <p>Launch Roblox Studio and open your game project</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-item">
+                            <div class="instruction-icon">📂</div>
+                            <div class="instruction-text">
+                                <h4>Import the Model</h4>
+                                <p>Right-click in Explorer → Insert from File → Select SimpleChatService.rbxm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-item">
+                            <div class="instruction-icon">📍</div>
+                            <div class="instruction-text">
+                                <h4>Place the Scripts</h4>
+                                <p>Move ChatSystemServer to ServerScriptService and ChatSystemClient to StarterPlayer > StarterPlayerScripts</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="step-title">Basic Configuration</h3>
-                <p class="step-description">
-                    Edit the ChatConfig module to customize colors, commands, and behavior.
-                </p>
-                <div class="code-block">
--- In ChatConfig.luau
-local Config = {
-    Colors = {
-        Background = Color3.fromRGB(25, 25, 25),
-        Text = Color3.fromRGB(255, 255, 255),
-        Accent = Color3.fromRGB(0, 162, 255)
-    },
-    MaxMessages = 100,
-    AdminCommands = true
+            </section>
+
+            <!-- Step 3: Configure -->
+            <section class="install-step">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h2>Basic Configuration</h2>
+                        <p>Customize the chat system for your game</p>
+                    </div>
+                </div>
+                
+                <div class="step-content">
+                    <div class="config-section">
+                        <h3>Edit ChatConfig.luau</h3>
+                        <p>Open the ChatConfig module and customize these basic settings:</p>
+                        
+                        <div class="code-example">
+                            <div class="code-block">
+                                <pre><code>-- Basic chat configuration
+local ChatConfig = {
+    -- Message Settings
+    MaxMessageLength = 200,
+    MessageCooldown = 1, -- seconds between messages
+    MaxMessagesPerMinute = 10,
+    
+    -- UI Colors
+    ChatBackgroundColor = Color3.fromRGB(25, 25, 25),
+    ChatTextColor = Color3.fromRGB(255, 255, 255),
+    
+    -- Admin Settings
+    AdminPrefix = "/",
+    AdminList = {}, -- Add your user ID here: {123456789}
 }
-                </div>
-            </div>
 
-            <div class="installation-step animate-fade-in animate-delay-2">
-                <div class="step-number">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <h3 class="step-title">Custom Styling</h3>
-                <p class="step-description">
-                    Modify the UI elements to match your game's visual style.
-                </p>
-                <div class="code-block">
--- Customize chat window appearance
-ChatFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-ChatFrame.BorderColor3 = Color3.fromRGB(60, 60, 60)
-MessageLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Troubleshooting Section -->
-    <section class="section" style="padding: var(--spacing-20) 0; background: var(--chat-bg);">
-        <div class="container">
-            <div class="section-header animate-fade-in">
-                <h2 class="section-title" style="color: var(--chat-text);">
-                    <i class="fas fa-tools" style="color: var(--chat-accent); margin-right: var(--spacing-2);"></i>
-                    Troubleshooting
-                </h2>
-                <p class="section-description" style="color: var(--gray-400);">
-                    Common issues and their solutions
-                </p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card animate-fade-in animate-delay-1" style="background: var(--chat-bg-light); border: 1px solid var(--chat-border);">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, var(--error-color), #cc0000);">
-                        <i class="fas fa-exclamation-triangle"></i>
+return ChatConfig</code></pre>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="feature-title" style="color: var(--chat-text);">Chat Not Appearing</h3>
-                    <p class="feature-description" style="color: var(--gray-400);">
-                        Make sure the ChatSystemClient is placed in StarterPlayerScripts and the server script is in ServerScriptService.
-                    </p>
-                </div>
-
-                <div class="feature-card animate-fade-in animate-delay-2" style="background: var(--chat-bg-light); border: 1px solid var(--chat-border);">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, var(--warning-color), #cc8800);">
-                        <i class="fas fa-ban"></i>
+                    
+                    <div class="config-tips">
+                        <div class="tip-item">
+                            <div class="tip-icon">💡</div>
+                            <div class="tip-text">
+                                <h4>Add Your User ID</h4>
+                                <p>To use admin commands, add your Roblox user ID to the AdminList</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tip-item">
+                            <div class="tip-icon">🎨</div>
+                            <div class="tip-text">
+                                <h4>Customize Colors</h4>
+                                <p>Change the background and text colors to match your game's theme</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="feature-title" style="color: var(--chat-text);">Commands Not Working</h3>
-                    <p class="feature-description" style="color: var(--gray-400);">
-                        Verify that you have admin permissions set up correctly in the ChatConfig module.
-                    </p>
                 </div>
+            </section>
 
-                <div class="feature-card animate-fade-in animate-delay-3" style="background: var(--chat-bg-light); border: 1px solid var(--chat-border);">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, var(--success-color), #008855);">
-                        <i class="fas fa-question-circle"></i>
+            <!-- Step 4: Test -->
+            <section class="install-step">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <h2>Test Your Chat</h2>
+                        <p>Make sure everything is working correctly</p>
                     </div>
-                    <h3 class="feature-title" style="color: var(--chat-text);">Need Help?</h3>
-                    <p class="feature-description" style="color: var(--gray-400);">
-                        Check our documentation or create an issue on GitHub for additional support.
-                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+                <div class="step-content">
+                    <div class="test-checklist">
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <span>Press F9 to open Developer Console and check for errors</span>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <span>Test the game and try sending a chat message</span>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <span>If you're an admin, try using /announce Hello World!</span>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <div class="checkbox">✓</div>
+                            <span>Check that the chat UI appears and messages display correctly</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Next Steps -->
-    <section class="section" style="padding: var(--spacing-20) 0; background: linear-gradient(135deg, var(--chat-accent), var(--primary-dark));">
-        <div class="container">
-            <div class="download-content animate-fade-in">
-                <h2 class="section-title" style="color: var(--white);">
-                    <i class="fas fa-rocket animate-pulse"></i>
-                    Ready to Get Started?
-                </h2>
-                <p class="section-description" style="color: rgba(255, 255, 255, 0.9);">
-                    Your chat system is now installed. Explore the documentation to learn about advanced features.
-                </p>
-                <div class="download-buttons">
-                    <a href="documentation.html" class="btn btn-large" style="background: var(--white); color: var(--chat-accent);">
-                        <i class="fas fa-book"></i>
-                        View Documentation
-                    </a>
-                    <a href="examples.html" class="btn btn-large btn-secondary">
-                        <i class="fas fa-code"></i>
-                        See Examples
-                    </a>
+            <!-- Troubleshooting -->
+            <section class="troubleshooting">
+                <div class="section-header">
+                    <h2>🔧 Troubleshooting</h2>
+                    <p>Common issues and simple solutions</p>
                 </div>
-            </div>
+                
+                <div class="trouble-grid">
+                    <div class="trouble-item">
+                        <h3>Chat not appearing?</h3>
+                        <ul>
+                            <li>Check that ChatSystemClient is in StarterPlayer > StarterPlayerScripts</li>
+                            <li>Make sure ChatSystemServer is in ServerScriptService</li>
+                            <li>Look for errors in the Developer Console (F9)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h3>Messages not sending?</h3>
+                        <ul>
+                            <li>Check if you're hitting the message cooldown limit</li>
+                            <li>Verify the ChatEvents module is in ReplicatedStorage</li>
+                            <li>Make sure both server and client scripts are running</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h3>Admin commands not working?</h3>
+                        <ul>
+                            <li>Add your user ID to the AdminList in ChatConfig</li>
+                            <li>Make sure you're using the correct prefix (default is "/")</li>
+                            <li>Check that AdminCommands.luau is in the correct location</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <h3>Still having issues?</h3>
+                        <ul>
+                            <li>Join our Discord server for help</li>
+                            <li>Watch our YouTube tutorials</li>
+                            <li>Check the documentation for more details</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Steps -->
+            <section class="next-steps">
+                <div class="section-header">
+                    <h2>🚀 What's Next?</h2>
+                    <p>Now that you have SimpleChatService installed, here's what you can do:</p>
+                </div>
+                
+                <div class="next-grid">
+                    <div class="next-card">
+                        <div class="next-icon">📚</div>
+                        <h3>Read the Documentation</h3>
+                        <p>Learn about all the features and how to use them</p>
+                        <a href="documentation.html" class="btn btn-secondary">View Docs</a>
+                    </div>
+                    
+                    <div class="next-card">
+                        <div class="next-icon">💬</div>
+                        <h3>Join Our Community</h3>
+                        <p>Get help and share your experience with other users</p>
+                        <a href="#" class="btn btn-secondary discord-link">Join Discord</a>
+                    </div>
+                    
+                    <div class="next-card">
+                        <div class="next-icon">📺</div>
+                        <h3>Watch Tutorials</h3>
+                        <p>Step-by-step video guides for setup and customization</p>
+                        <a href="#" class="btn btn-secondary youtube-link">Watch Videos</a>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div>
+                <div class="footer-main">
                     <div class="footer-logo">
-                        <i class="fas fa-comments"></i>
-                        SimpleChatService
+                        <span class="logo-icon">💬</span>
+                        <span class="logo-text">SimpleChatService</span>
                     </div>
                     <p class="footer-description">
-                        A basic chat system for Roblox with admin commands and message filtering. Open source and easy to set up.
+                        Simple installation, simple chat system.
                     </p>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="installation.html">Installation</a></li>
-                        <li><a href="demo.html">Demo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="api.html">API Reference</a></li>
-                        <li><a href="examples.html">Examples</a></li>
-                        <li><a href="https://github.com/mostafa651/SimpleChatService" target="_blank">GitHub</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://github.com/mostafa651/SimpleChatService/issues" target="_blank">Report Issues</a></li>
-                        <li><a href="https://github.com/mostafa651/SimpleChatService/discussions" target="_blank">Discussions</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="installation.html">Installation</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="assets/SimpleChatService.rbxm" download>Download</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SimpleChatService. Open source under MIT License.</p>
+                <p>&copy; 2025 SimpleChatService. Simple and honest.</p>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
     <script>
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all installation steps
-        document.querySelectorAll('.installation-step').forEach(step => {
-            observer.observe(step);
-        });
-
-        // Observe sections for fade-in animations
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
-            section.classList.add('visible');
-        });
-
-        // Add staggered animation to feature cards
-        document.querySelectorAll('.feature-card').forEach((card, index) => {
-            card.style.animationDelay = `${index * 0.2}s`;
-        });
-
-        // Enhanced button hover effects
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px) scale(1.05)';
-            });
+        // Copy code functionality
+        function copyCode(button) {
+            const codeBlock = button.previousElementSibling;
+            const text = codeBlock.textContent;
             
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                    button.classList.remove('copied');
+                }, 2000);
             });
-        });
+        }
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -350,17 +339,23 @@ MessageLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
             });
         });
 
-        // Add typing animation to code blocks
-        document.querySelectorAll('.code-block').forEach(block => {
-            block.addEventListener('mouseenter', function() {
-                this.style.borderColor = 'var(--chat-accent)';
-                this.style.boxShadow = '0 0 20px rgba(0, 162, 255, 0.3)';
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
             });
-            
-            block.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'var(--chat-border)';
-                this.style.boxShadow = 'none';
-            });
+        }, observerOptions);
+
+        // Observe all install steps
+        document.querySelectorAll('.install-step, .troubleshooting, .next-steps').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>

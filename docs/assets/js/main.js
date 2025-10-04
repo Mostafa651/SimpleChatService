@@ -1,4 +1,7 @@
-// Main JavaScript for SimpleChatService Documentation
+/**
+ * SimpleChatService Documentation
+ * Enhanced with smooth animations and interactions
+ */
 
 // DOM Elements
 const navbar = document.querySelector('.navbar');
