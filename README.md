@@ -63,11 +63,10 @@ SimpleChatService/
 ## Installation
 
 1. Place the `SimpleChatService` folder under `ReplicatedStorage`.
-2. Put `SimpleChatServiceClient.lua` in `StarterPlayerScripts` (as a LocalScript).
-3. Put `ChatSystemServer.lua` in `ServerScriptService` (as a Script).
-4. Configure admins, message limits, and mute durations in `Server/ServerConfig.lua`.
-5. Configure chat tags, gamepasses, and group ranks in `EditableModule/ChatTagConfig.lua`.
-6. (Optional) Drop in an `Icon` module ([Icon by suryapeaky](https://github.com/suryapeaky/Icon)) for the TopBar chat button, or let the bundled one load.
+2. Put `ChatSystemServer.lua` in `ServerScriptService` (as a Script).
+3. Configure admins, message limits, and mute durations in `Server/ServerConfig.lua`.
+4. Configure chat tags, gamepasses, and group ranks in `EditableModule/ChatTagConfig.lua`.
+5. (Optional) Drop in an `Icon` module ([TopbarPlus by ForeverHD](https://1foreverhd.github.io/TopbarPlus/)) for the TopBar chat button, or let the bundled one load.
 
 ## Configuration Highlights
 
@@ -80,7 +79,7 @@ SimpleChatService/
 
 - Core system, UI, and architecture: **Mostafa (@shwaza123aa)** & **sulisizer**
 - `GoodSignal` signal implementation: **stravant** (MIT Licensed)
-- Icon module: community `Icon` library (optional dependency, not bundled by default)
+- `TopbarPlus`: by `ForeverHD` (https://1foreverhd.github.io/TopbarPlus/)
 
 ## Attribution
 
