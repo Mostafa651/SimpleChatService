@@ -5,7 +5,7 @@ A custom, fully client/server chat system for Roblox — built to replace the de
 **Author:** Mostafa ([@shwaza123aa](https://www.youtube.com/@MostafaTheCreator)) & sulisizer
 **First released:** October 9, 2025
 **Current version:** v1.1.2
-**License:** MIT (see [LICENSE](./LICENSE))
+**License:** Mozilla Public License 2.0 (see [LICENSE](./LICENSE))
 
 ---
 
@@ -81,9 +81,13 @@ SimpleChatService/
 - `GoodSignal` signal implementation: **stravant** (MIT Licensed)
 - `TopbarPlus`: by `ForeverHD` (https://1foreverhd.github.io/TopbarPlus/)
 
-## Attribution
+## Licensing
 
-SimpleChatService is MIT licensed — you're free to use, modify, and redistribute it. As a courtesy, please either keep the in-code attribution header intact or credit "SimpleChatService" somewhere in your project description. See [LICENSE](./LICENSE) for full terms.
+SimpleChatService is licensed under the **Mozilla Public License 2.0**. Full terms are in [LICENSE](./LICENSE). In short:
+
+- You're free to use and modify SimpleChatService, including in commercial Roblox games.
+- If you distribute modified versions of SimpleChatService's own source files, those modified files must remain under MPL 2.0 and keep their license/attribution notices intact — you may not strip the notices out and pass the code off as entirely your own original work.
+- Please keep the in-code attribution header intact, or credit "SimpleChatService" (with a link back to this repo) somewhere in your project description.
 
 ## Version History
 
